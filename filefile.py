@@ -1,4 +1,3 @@
-import tkinter.font
 from tkinter import *
 import boto3
 from pprint import pprint
@@ -24,7 +23,7 @@ def output(ff, frame):
     how_many = len(rekesp['FaceDetails'])
     ff.tkraise()
 
-    text="»ç¶÷ ¼ö´Â ÃÑ "+str(how_many)+"¸íÀÔ´Ï´Ù."
+    text="Â»Ã§Â¶Ã· Â¼Ã¶Â´Ã‚ ÃƒÃ‘ "+str(how_many)+"Â¸Ã­Ã€Ã”Â´ÃÂ´Ã™."
     l=Label(ff, text=text)
     l.place(x=150,y=100)
     l.img=PhotoImage(file=image)
